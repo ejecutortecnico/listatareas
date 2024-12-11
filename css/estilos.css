@@ -1,0 +1,17 @@
+#contenedor{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+#divTareas{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
