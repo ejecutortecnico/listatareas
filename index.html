@@ -2,72 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda de Zapatos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tareas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Zapatería Éxito</h1>
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#contacto">Contáctenos</a>
-    </nav>
-  </header>
-
-  <section id="inicio">
-    <h2>Bienvenido a la mejor tienda de zapatos</h2>
-    <p>Encuentra estilo, comodidad y calidad en un solo lugar.</p>
-  </section>
-
-  <section id="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="productos-grid">
-      <div class="producto">
-        <img src="https://via.placeholder.com/200x150" alt="Zapato 1">
-        <h3>Zapato Deportivo</h3>
-        <p>$150.000</p>
-      </div>
-      <div class="producto">
-        <img src="https://via.placeholder.com/200x150" alt="Zapato 2">
-        <h3>Zapato Casual</h3>
-        <p>$120.000</p>
-      </div>
-      <div class="producto">
-        <img src="https://via.placeholder.com/200x150" alt="Zapato 3">
-        <h3>Zapato Elegante</h3>
-        <p>$180.000</p>
-      </div>
+  <div class="container">
+    <h1>Lista de Tareas</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Nueva tarea">
+      <input type="date" id="taskDate">
+      <button onclick="addTask()">Agregar</button>
     </div>
-  </section>
-
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Envío a nivel nacional</li>
-      <li>Cambios sin costo en 30 días</li>
-      <li>Asesoría personalizada por WhatsApp</li>
-    </ul>
-  </section>
-
-  <section id="contacto">
-    <h2>Contáctenos</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p id="formMessage"></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Zapatería Éxito. Todos los derechos reservados.</p>
-  </footer>
-
+    <ul id="taskList"></ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
